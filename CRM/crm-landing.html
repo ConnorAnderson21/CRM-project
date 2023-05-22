@@ -13,21 +13,25 @@
 </head>
 
 <body>
-    <div id="navbar" class="justify-content-center">
-        <img src="/CRM/pics/CRM-Main/Logo.png" alt="">
-        <a class="navlink" href="#">Home</a>
-        <a class="navlink" href="#">Features</a>
-        <a class="navlink" href="#">Pricing</a>
-        <a class="navlink" href="/CRM/how-it-works.html">How it Works</a>
-        <a class="navlink" href="#">Support</a>
-        <span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
-        <a id="signin" class="btn btn-outline-primary" href="#" role="button">Sign In</a>
-        <a id="tryit" class="btn btn-primary" href="/CRM/signup.html" role="button">Try It Free</a>
+    <div class="container-fluid">
+        <div id="navbar" class="row justify-content-center">
+            <div class="col-12">
+                <img src="/CRM/pics/CRM-Main/Logo.png" alt="">
+                <a class="navlink" href="#">Home</a>
+                <a class="navlink" href="#">Features</a>
+                <a class="navlink" href="#">Pricing</a>
+                <a class="navlink" href="/CRM/how-it-works.html">How it Works</a>
+                <a class="navlink" href="#">Support</a>
+                <span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                <a id="signin" class="btn btn-outline-primary" href="/CRM/signin.html" role="button">Sign In</a>
+                <a id="tryit" class="btn btn-primary" href="/CRM/signup.html" role="button">Try It Free</a>
+            </div>
+        </div>
     </div>
 
-    <div id="container1" class="container justify-content-center">
-        <div class="row">
-            <div class="col-6 justify-content-center">
+    <div id="container1" class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-6">
                 <br>
                 <h1>Focus on<br>Your Business</h1>
                 <h3>Let Us Handle Everything Else</h3>
@@ -46,64 +50,88 @@
                     Minutes &nbsp; <span id="bluedot">&#9679;</span> &nbsp; Cancel at Anytime</p>
             </div>
 
-            <div class="col-6 justify-content-center">
-                <img id="grid" src="/CRM/pics/CRM-Main/Header-Side.png" alt="">
+            <div class="col-6 col-md-6">
+                <img class="image-fluid" id="grid" src="/CRM/pics/CRM-Main/Header-Side.png" alt="">
             </div>
         </div>
     </div>
+
     <hr>
+
     <h4>Start to Explore <span class="double">Double</span>Tap</h4>
     <br>
     <p id="newandbetter">A new and better way for small businesses to manage their customer base, payments and
         <br> keep track of internal tasks.
     </p>
 
-    <div id="container2" class="container">
-        <div class="row">
-            <div class="icons" class="col-3"> </div>
-            <div class="icons" class="col-3">
+    <div id="container2" class="container mb-5">
+        <div class="row ">
 
-                <figure><img src="/CRM/pics/CRM-Main/Page-1.png" alt="">
-                    <br><br>
+            <div id="dollar" class="icons" class="col-3 col-md-3 col-sm-3">
+                <figure style="background-color: blue; color: white; ">
+                    <h2 style="font-weight: bold; background-color: white; color: black; border-radius: 50%;">$</h2>
+                    <figcaption>Payments</figcaption>
+                </figure>
+            </div>
+
+            <div class="icons" class="col-3 col-md-3 col-sm-3">
+                <figure><img class="img-fluid" src="/CRM/pics/CRM-Main/Page-1.png" alt="">
                     <figcaption>Retain</figcaption>
                 </figure>
-
             </div>
 
-            <div class="icons" class="col-3">
-
-                <figure><img src="/CRM/pics/CRM-Main/layer1.png" alt="">
-                    <br><br>
+            <div class="icons" class="col-3 col-md-3 col-sm-3">
+                <figure><img class="img-fluid" src="/CRM/pics/CRM-Main/layer1.png" alt="">
                     <figcaption>Reporting</figcaption>
                 </figure>
-
             </div>
-            <div class="icons" class="col-3"><figure><img src="/CRM/pics/CRM-Main/upanddown opposite sidebyside updown directions two arrows.png" alt="">
-                    <br><br>
-                    <figcaption>Convert</figcaption>
-                </figure></div>
-        </div>
 
+            <div class="icons" class="col-3 col-md-3 col-sm-3">
+                <figure><img class="img-fluid"
+                        src="/CRM/pics/CRM-Main/upanddown opposite sidebyside updown directions two arrows.png" alt="">
+                    <figcaption>Convert</figcaption>
+                </figure>
+            </div>
+
+        </div>
     </div>
 
     <div class="container justify-content-center">
-        <div class="card mb-3 display-horizontal" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="/CRM/pics/CRM-Main/credit-card-picture.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div id="cardbody" class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Start accepting payments with Ease</h5>
-                        <p class="card-text">Deliver a world of payment options and seamless checkout experiences,
-                            making it easy for your customers to pay you for your products and services.</p>
-                        <a href="/CRM/how-it-works.html" type="button" class="btn btn-outline-light">Learn More <span
-                                id="pointy">&rsaquo;</span></a>
-                    </div>
+        <!-- <div class="card mb-3 display-horizontal" style="max-width: 540px;"> -->
+        <div id="wholecard" class="row g-0 justify-content-center">
+            <div class="col-4 col-md-4">
+                <img id="creditcard" src="/CRM/pics/CRM-Main/credit-card-picture.png" class="img-fluid rounded-start"
+                    alt="...">
+            </div>
+            <div id="cardbody" class="col-8 col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Start accepting payments with Ease</h5>
+                    <p class="card-text">Deliver a world of payment options and seamless checkout experiences, <br>
+                        making it easy for your customers to pay you for your products and services.</p>
+
+                    <ul>
+                        <li>Accept credit and debit cards, Paypal, ACH, Apple pay and more with the flick of a switch</li>
+                        <li>Process transactions in up to 32 different currencies</li>
+                        <li>Integrate with popular payment gateways like Stripe and Braintree</li>
+                        <li>Select from a variety of different checkout options and experiences</li>
+                    </ul>
+
+                    <a href="/CRM/how-it-works.html" type="button" class="btn btn-outline-light">Learn More <span
+                            id="pointy">&rsaquo;</span></a>
                 </div>
             </div>
         </div>
+        <!-- </div> -->
     </div>
+
+    <footer>
+<h2>Try Double Tap Today</h2>
+<h6>Let's Get Started</h6>
+<a id="getstarted"class="btn btn-primary" href="/CRM/signup.html" role="button">Get Started
+    &#8811;</a>
+<a id="chat" class="btn btn-outline-primary" href="#" role="button">&#128172; Chat With Us</a>
+
+    </footer>
 
 
 
